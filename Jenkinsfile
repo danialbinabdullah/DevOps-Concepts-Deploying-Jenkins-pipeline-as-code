@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/yourusername/yourrepository.git'
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/danialbinabdullah/DevOps-Concepts-Deploying-Jenkins-pipeline-as-code.git']])
             }
         }
         
