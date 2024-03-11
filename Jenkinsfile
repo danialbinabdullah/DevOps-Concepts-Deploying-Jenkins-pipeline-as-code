@@ -10,8 +10,7 @@ pipeline {
         
         stage('Install Dependencies') {
             steps {
-                sh 'pip install pytest'
-                sh 'pytest'
+                sh 'pip install -r requirments.txt'
             }
         }
 
