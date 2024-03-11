@@ -26,10 +26,10 @@ pipeline {
                     def branchName = env.BRANCH_NAME
                     if (branchName == 'main') {
                         echo 'Deploying to production'
-                        // Add your production deployment steps here
+                        // i would add deployment steps here
                     } else {
                         echo 'Deploying to UAT'
-                        // Add your UAT deployment steps here
+                        // I owuld add uat steps here
                     }
                 }
             }
